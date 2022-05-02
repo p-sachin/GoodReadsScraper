@@ -28,12 +28,6 @@ st.markdown("""
 """)
 
 
-# st.markdown("""The great thing about Streamlit is that you can work in Python as you normally do, and then you can add an "interactive layer" to it!
-
-# If you look at the code down here, the dataset is loaded using pandas as you're used to.
-# In this example, we will use a csv file created scraping from IMDb last time.""")
-
-
 # Actual work begins here
 
 df = pd.read_csv("data/goodread_final_5596.csv")
