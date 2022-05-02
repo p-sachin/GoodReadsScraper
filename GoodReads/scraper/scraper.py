@@ -1,9 +1,7 @@
 # Importing the required libraries for the web scraping
-import pandas as pd
 import re
 import requests
 from bs4 import BeautifulSoup
-import time
 
 # Fetching the Required URL
 

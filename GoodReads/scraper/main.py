@@ -1,6 +1,5 @@
 import pandas as pd
-from bs4 import BeautifulSoup
-from scraper import *
+from scraper.scraper import *
 
 no_pages = 20
 
@@ -9,7 +8,7 @@ book_url = get_url(no_pages)
 books = []
 
 for book_no, url in enumerate(book_url):
-    print(f'Printing Page {')
+    print(f'Printing Page')
     my_page = requests.get(url, headers={'Accept-Language': 'en-US,en;q=0.8'})
     soup = BeautifulSoup(my_page.content, "html.parser")
     try:
